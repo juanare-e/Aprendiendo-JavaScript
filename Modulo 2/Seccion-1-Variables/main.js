@@ -34,7 +34,40 @@ console.log("bienvenida"); // Salida:
 
 // ------------
 // PROGRAMAS POR BLOQUES
+// Ej:
+let contador;  // -> se crea la variable, mas no tiene ningun dato insertado
+console.log(contador); // Pequeña comprobacion, para verificar que el contador aun no esta definido con un dato.
+{
+  contador = 1; // se le agrega un dato al la variable contador
+}
+contador = contador + 1;
+console.log(contador); // la salida es 2
 
+// Como nos damos cuenta, lo que se hizo fue darle el dato a la variable
+// Los bloque de programas pueden estar uno dentro del otro
+
+// Utilizar bloques con let y var.
+
+// Bloque con let
+
+let height = 180;
+{
+  let weight = 70;
+}
+console.log(height); // -> la salida es 180
+console.log(weight); // -> no tiene salida, ya que la variable se creo dentro del bloque y con let no puede salir del bloque
+
+// bloque con var
+
+ var height = 180;
+{
+  var weight = 70;
+}
+console.log(height); // -> la salida es 180
+console.log(weight); // -> la salida es 70
+
+// Al declarar la variable con var, esta permite que la variable pueda salir del bloque
+// Mientras que con let, es al contrario y esta no puede pasar mas alla del bloque.
 
 
 
